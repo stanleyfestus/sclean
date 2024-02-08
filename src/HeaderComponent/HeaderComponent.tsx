@@ -1,13 +1,12 @@
 import React, { useState } from "react";
-import { Box, IconButton, Grid, Menu, MenuItem } from "@mui/material";
+import { IconButton, Grid, Menu, MenuItem } from "@mui/material";
 import { Link } from "react-router-dom";
 import bg from "../img/cleanboy.jpg";
 import PhoneIcon from "@mui/icons-material/Phone";
 import PlaceIcon from "@mui/icons-material/Place";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
-import FormatQuoteIcon from "@mui/icons-material/FormatQuote";
 import MenuIcon from "@mui/icons-material/Menu";
-import logo from "../img/logo.png";
+import LinkMenuComponent from "../LinkMenu/LinkMenuComponent";
 
 const styles = {
   menuItem: {
@@ -25,6 +24,7 @@ const styles = {
     color: "white",
   },
 };
+
 const HeaderComponent = () => {
   const [anchorEl, setAnchorEl] = useState<HTMLElement | null>(null);
   const handleMenuClick = (event: React.MouseEvent<HTMLButtonElement>) => {
@@ -112,7 +112,7 @@ const HeaderComponent = () => {
         <MenuItem onClick={handleMenuClose} sx={styles.menuItem}>
           <Link to="/about" style={styles.link}>
             About Us
-          </Link>{" "}
+          </Link>
         </MenuItem>
         <MenuItem onClick={handleMenuClose} sx={styles.menuItem}>
           <Link to="services" style={styles.link}>
@@ -185,108 +185,7 @@ const HeaderComponent = () => {
               Mon-Fri - 07.00 am - 07.00
             </Grid>
           </Grid>
-          <Grid
-            container
-            sx={{
-              position: "relative",
-              top: "24px",
-              color: "white",
-            }}
-          >
-            <Grid
-              container
-              sx={{ fontWeight: "bold", fontSize: "calc(12px + 0.5vw)" }}
-            >
-              <Grid item sm={5} lg={5}>
-                <Grid
-                  container
-                  sx={{
-                    display: "flex",
-                    flexDirection: "row",
-                    gap: 4,
-                  }}
-                >
-                  <Grid item>
-                    <Link
-                      style={{ textDecoration: "none", color: "inherit" }}
-                      to="/"
-                    >
-                      Home
-                    </Link>
-                  </Grid>
-                  <Grid item>
-                    <Link
-                      style={{ textDecoration: "none", color: "inherit" }}
-                      to="about"
-                    >
-                      About Us
-                    </Link>
-                  </Grid>
-                  <Grid item>
-                    <Link
-                      style={{ textDecoration: "none", color: "inherit" }}
-                      to="faqs"
-                    >
-                      FAQs
-                    </Link>
-                  </Grid>
-                </Grid>
-              </Grid>
-              <Grid item sm={2} lg={2} sx={{ textAlign: "center" }}>
-                <Link to="/" style={styles.linkBlack}>
-                  <Box component="img" src={logo} sx={{ width: "auto" }}></Box>
-                </Link>
-              </Grid>
-              <Grid item sm={5} lg={5}>
-                <Grid
-                  container
-                  sx={{
-                    display: "flex",
-                    flexDirection: "row",
-                    gap: 4,
-                  }}
-                >
-                  <Grid item>
-                    <Link
-                      style={{ textDecoration: "none", color: "inherit" }}
-                      to="services"
-                    >
-                      Request/Services
-                    </Link>
-                  </Grid>
-                  <Grid item>
-                    <Link
-                      style={{ textDecoration: "none", color: "inherit" }}
-                      to="contactus"
-                    >
-                      Contact Us
-                    </Link>
-                  </Grid>
-                </Grid>
-              </Grid>
-            </Grid>
-            <Grid container>
-              <Box
-                sx={{
-                  color: "rgba(250, 250, 250, 1)",
-                  position: "relative",
-                  top: 80,
-                  fontSize: "calc(18px + 0.5vw)",
-                  maxWidth: "70%",
-                  margin: "auto",
-                  fontFamily: "Monospace",
-                  textAlign: "center",
-                }}
-              >
-                <FormatQuoteIcon />
-                <Box>
-                  We use safe hospital-grade disinfectants, HEPA filtrations and
-                  microfiber cleaning cloths to reduce cross contamination.
-                </Box>
-              </Box>
-            </Grid>
-            <Grid></Grid>
-          </Grid>
+          <LinkMenuComponent />
         </Grid>
       </Grid>
     </Grid>
