@@ -3,6 +3,7 @@ import DiamondIcon from "@mui/icons-material/Diamond";
 import BeachAccessIcon from "@mui/icons-material/BeachAccess";
 import HomeWorkIcon from "@mui/icons-material/HomeWork";
 import HandymanIcon from "@mui/icons-material/Handyman";
+import SmallScreenComponent from "./HomeHeaderComponent";
 
 const MainComponent = () => {
   return (
@@ -10,56 +11,19 @@ const MainComponent = () => {
       container
       sx={{
         fontFamily: "Lato",
-        padding: "2px",
         width: "100vw",
-        marginBottom: "6%",
+        "@media screen and (max-width: 600px)": {
+          border: "1px solid black",
+          marginBottom: "6%",
+          padding: "2px",
+        },
+        "@media screen and (min-width: 601px)": {
+          border: "1px solid blue",
+        },
       }}
     >
-      <Grid
-        container
-        sx={{
-          fontSize: "calc(22px + 0.5vw)",
-          textAlign: "center",
-        }}
-      >
-        <Grid item md={10} sm={10} sx={{ width: "100%", margin: "auto" }}>
-          <br />
-          <br />
-          We Provide Top Of The Line Cleaning Services
-        </Grid>
-      </Grid>
-      <Box
-        sx={{
-          width: "20%",
-          borderBottom: "2px solid black",
-          margin: "auto",
-          position: "relative",
-          top: 6,
-        }}
-      ></Box>
-      <Grid
-        container
-        sx={{
-          fontSize: "calc(12px + 0.5vw)",
-          padding: "2px",
-        }}
-      >
-        <Grid
-          item
-          md={12}
-          sm={12}
-          sx={{ width: "100%", margin: "auto", textAlign: "center" }}
-        >
-          We service Alppila, Kaakkuri, Kontinkangas, Tuira, Somerville,
-          Watertown, Medford, Rhode Island and surrounding areas. Get a quote
-          now!
-        </Grid>
-      </Grid>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+      <SmallScreenComponent />
+  
       <Grid container>
         <Grid
           container
@@ -91,7 +55,6 @@ const MainComponent = () => {
               </Box>
             </Grid>
           </Grid>
-          {/* <Grid item md={12} sm={4}></Grid> */}
           <Grid item md={6} sm={6}>
             <Box>
               <IconButton>
