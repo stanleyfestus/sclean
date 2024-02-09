@@ -25,7 +25,7 @@ const ShareScreenComponent = () => {
             <Box>
               <Box sx={{ padding: "0px" }}>
                 <IconButton>
-                  <DiamondIcon fontSize="large" color="primary" />
+                  <DiamondIcon fontSize="large" color="success" />
                 </IconButton>
               </Box>
               <Box sx={{ paddingLeft: "8px" }}>
@@ -43,7 +43,7 @@ const ShareScreenComponent = () => {
             <Box>
               <Box sx={{ padding: "0px" }}>
                 <IconButton>
-                  <HandymanIcon fontSize="large" color="primary" />
+                  <HandymanIcon fontSize="large" color="success" />
                 </IconButton>
               </Box>
               <Box sx={{ padding: "8px" }}>
@@ -82,7 +82,7 @@ const ShareScreenComponent = () => {
             <Box>
               <Box sx={{ padding: "0px" }}>
                 <IconButton>
-                  <HomeWorkIcon fontSize="large" color="primary" />
+                  <HomeWorkIcon fontSize="large" color="success" />
                 </IconButton>
               </Box>
               <Box>
@@ -96,7 +96,7 @@ const ShareScreenComponent = () => {
             <Box>
               <Box sx={{ padding: "0px" }}>
                 <IconButton>
-                  <BeachAccessIcon fontSize="large" color="primary" />
+                  <BeachAccessIcon fontSize="large" color="success" />
                 </IconButton>
               </Box>
               <Box sx={{ padding: "8px" }}>
@@ -125,10 +125,10 @@ const ShareScreenComponent = () => {
           }}
         >
           <Grid item md={6} lg={6} xl={6} sm={6}>
-            <Box>
+            <Box sx={{ height: "200px"}}>
               <Box sx={{ padding: "0px" }}>
                 <IconButton>
-                  <DiamondIcon fontSize="large" color="primary" />
+                  <DiamondIcon fontSize="large" color="success" />
                 </IconButton>
               </Box>
               <Box sx={{ paddingLeft: "8px" }}>
@@ -143,10 +143,10 @@ const ShareScreenComponent = () => {
                 </Box>
               </Box>
             </Box>
-            <Box>
+            <Box sx={{ height: "200px" }}>
               <Box sx={{ padding: "0px" }}>
                 <IconButton>
-                  <HandymanIcon fontSize="large" color="primary" />
+                  <HandymanIcon fontSize="large" color="success" />
                 </IconButton>
               </Box>
               <Box sx={{ padding: "8px" }}>
@@ -160,10 +160,10 @@ const ShareScreenComponent = () => {
             </Box>
           </Grid>
           <Grid item md={6} lg={6} xl={6} sm={6}>
-            <Box>
+            <Box sx={{ height: "200px" }}>
               <Box sx={{ padding: "0px" }}>
                 <IconButton>
-                  <HomeWorkIcon fontSize="large" color="primary" />
+                  <HomeWorkIcon fontSize="large" color="success" />
                 </IconButton>
               </Box>
               <Box>
@@ -174,10 +174,10 @@ const ShareScreenComponent = () => {
                 </Box>
               </Box>
             </Box>
-            <Box>
+            <Box sx={{ height: "200px"}}>
               <Box sx={{ padding: "0px" }}>
                 <IconButton>
-                  <BeachAccessIcon fontSize="large" color="primary" />
+                  <BeachAccessIcon fontSize="large" color="success" />
                 </IconButton>
               </Box>
               <Box sx={{ padding: "8px" }}>
