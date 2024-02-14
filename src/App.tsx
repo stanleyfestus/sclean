@@ -1,6 +1,5 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import { ChakraProvider } from '@chakra-ui/react'
 import { Grid } from "@mui/material";
 import HomeComponent from "./Home/HomeComponent";
 import AboutComponent from "./About/About";

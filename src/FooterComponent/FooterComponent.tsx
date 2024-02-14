@@ -22,10 +22,11 @@ const FooterComponent = () => {
         position: "relative",
         width: "100vw",
         color: "rgba(255, 255, 255, 1)",
+        fontSize: "calc(8px + 0.5vw)",
       }}
     >
       <Grid item xs={12} sm={12} md={6}>
-        <Grid container spacing={1}>
+        <Grid container spacing={2}>
           <Grid item xs={12} sm={6} md={6} lg={6} xl={6}>
             <Box sx={{ width: "80%", margin: "auto" }}>
               <br />
@@ -102,7 +103,7 @@ const FooterComponent = () => {
             <br />
             <br />
             <br />
-            <Box>
+            <Box sx={{ maxWidth: "80%", margin: "auto" }}>
               <Box component="span">
                 <PlaceIcon color="success" fontSize="inherit" />
               </Box>
@@ -110,11 +111,17 @@ const FooterComponent = () => {
             </Box>
             <Box
               sx={{
+                maxWidth: "80%",
                 borderBottom: "1px solid rgba(250,250,250,0.2)",
-                marginTop: "12px",
+                margin: "12px auto 0px",
               }}
-            ></Box>
-            <Box sx={{ marginTop: "6px" }}>
+            />
+            <Box
+              sx={{
+                maxWidth: "80%",
+                margin: "12px auto 0px",
+              }}
+            >
               <Box component="span">
                 <PhoneIcon fontSize="inherit" color="success" />
               </Box>
@@ -122,11 +129,17 @@ const FooterComponent = () => {
             </Box>
             <Box
               sx={{
+                maxWidth: "80%",
                 borderBottom: "1px solid rgba(250,250,250,0.2)",
-                marginTop: "12px",
+                margin: "12px auto 0px",
               }}
-            ></Box>
-            <Box sx={{ marginTop: "6px" }}>
+            />
+            <Box
+              sx={{
+                maxWidth: "80%",
+                margin: "12px auto 0px",
+              }}
+            >
               <Box component="span">
                 <EmailIcon fontSize="inherit" color="success" />
               </Box>
@@ -134,11 +147,17 @@ const FooterComponent = () => {
             </Box>
             <Box
               sx={{
+                maxWidth: "80%",
                 borderBottom: "1px solid rgba(250,250,250,0.2)",
-                marginTop: "12px",
+                margin: "12px auto 0px",
               }}
-            ></Box>
-            <Box sx={{ marginTop: "6px" }}>
+            />
+            <Box
+              sx={{
+                maxWidth: "80%",
+                margin: "12px auto 0px",
+              }}
+            >
               <Box component="span">
                 <AccessTimeIcon
                   fontSize="inherit"
